@@ -7,8 +7,8 @@ namespace cppGame {
 
 class Screen {
 public:
-    const static int SCREEN_WIDTH = 800;
-    const static int SCREEN_HEIGHT = 600;
+    const static int SCREEN_WIDTH = 1024;
+    const static int SCREEN_HEIGHT = 768;
 
 private: 
     SDL_Window *m_window;
