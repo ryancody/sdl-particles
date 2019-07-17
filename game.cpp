@@ -5,11 +5,16 @@
 #include "Screen.h"
 #include <math.h>
 #include <SDL2/SDL.h>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 using namespace cppGame;
 
 int main () {
+
+    // seed random number gemerator with time
+    srand(time(NULL));
 
     Screen screen;
 
