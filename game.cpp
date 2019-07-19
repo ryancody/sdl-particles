@@ -30,8 +30,9 @@ int main () {
     Swarm swarm;
 
     while(true) {
-        // update particles
-        // draw particles
+        
+        screen.clear();
+        swarm.update();
 
         const Particle * const pParticles = swarm.getParticles();
         for ( int i = 0; i < Swarm::NPARTICLES; i++ ) {
@@ -41,7 +42,7 @@ int main () {
             int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
 
             screen.setPixel(x, y, 255, 255, 255);
-        } 
+        }
         
         /*
         int elapsed = SDL_GetTicks();
