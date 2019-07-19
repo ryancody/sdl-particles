@@ -30,7 +30,7 @@ int main () {
     Swarm swarm;
 
     while(true) {
-        
+
         screen.clear();
         swarm.update();
 
@@ -39,7 +39,7 @@ int main () {
             Particle particle = pParticles[i];
 
             int x = (particle.m_x + 1) * Screen::SCREEN_WIDTH / 2;
-            int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
+            int y = (particle.m_y + 1) * Screen::SCREEN_WIDTH / 2;
 
             screen.setPixel(x, y, 255, 255, 255);
         }
